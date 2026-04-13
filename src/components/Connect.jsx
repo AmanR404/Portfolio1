@@ -33,7 +33,7 @@ const Connect = () => {
            </div>
         </a>
 
-        <a href="https://drive.google.com/file/d/1RtUPZcPEOM4cLSCYYajDlEqL1b1Q7Srq/view?usp=sharing" target="_blank" className="group flex-1 md:hover:flex-[1.5] transition-all duration-700 ease-in-out bg-[#dcdcd7] flex flex-col items-center justify-center relative overflow-hidden text-black z-0">
+        <a href="https://drive.google.com/file/d/141iC4WpvLZfClqWFB2zGfLiSnq3BJNvL/view?usp=sharing" target="_blank" className="group flex-1 md:hover:flex-[1.5] transition-all duration-700 ease-in-out bg-[#dcdcd7] flex flex-col items-center justify-center relative overflow-hidden text-black z-0">
            <FileText size={64} strokeWidth={1} className="mb-6 opacity-30 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500" />
            <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tighter uppercase relative z-10 transition-transform duration-500 group-hover:-translate-y-4">Resume</h2>
            <div className="absolute bottom-16 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center gap-2 translate-y-8 group-hover:translate-y-0 font-medium">
