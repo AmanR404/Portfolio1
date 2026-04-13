@@ -111,7 +111,7 @@ const About = () => {
           </SlideUp>
 
           <SlideUp delay={0.6}>
-            <a href="#resume" className="flex items-center justify-between gap-6 px-6 py-3 rounded-full border border-gray-400 hover:bg-[#dcdcd7] transition-colors cursor-pointer w-48 group">
+            <a href="https://drive.google.com/file/d/1RtUPZcPEOM4cLSCYYajDlEqL1b1Q7Srq/view?usp=sharing" target="_blank" className="flex items-center justify-between gap-6 px-6 py-3 rounded-full border border-gray-400 hover:bg-[#dcdcd7] transition-colors cursor-pointer w-48 group">
               <span className="font-semibold text-sm">Resume</span>
               {/* Using FileText as an approximation of the folder/document icon from image */}
               <FileText size={18} className="text-gray-700 group-hover:text-black transition-colors" />
