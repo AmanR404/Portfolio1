@@ -22,17 +22,17 @@ const Header = ({ theme = "dark" }) => {
   };
 
   return (
-    <nav className={`flex gap-10 justify-between pt-6 px-10 ${textColor} relative z-50`}>
-        <Link to="/">
-          <img src="/logo.svg" alt="logo" className={`h-6 w-auto transition-transform duration-300 hover:scale-110 ${invertLogo}`} />
+    <nav className={`flex flex-row items-center justify-between gap-4 pt-6 px-6 md:px-10 ${textColor} relative z-50`}>
+        <Link to="/" className="flex-shrink-0">
+          <img src="/logo.svg" alt="logo" className={`h-4 sm:h-5 md:h-6 w-auto transition-transform duration-300 hover:scale-110 ${invertLogo}`} />
         </Link>
-        <div className="flex gap-42">
+        <div className="flex justify-end gap-6 sm:gap-12 md:gap-24 lg:gap-42 text-xs sm:text-sm md:text-base">
             <ul>
                 <li>
                   <Link to="/works" className={getLinkClass("/works")}>Works</Link>
                 </li>
             </ul>
-            <ul className="flex flex-col">
+            <ul>
                 <li>
                   <Link to="/about" className={getLinkClass("/about")}>About</Link>
                 </li>
@@ -43,7 +43,7 @@ const Header = ({ theme = "dark" }) => {
                 </li>
             </ul>
         </div>
-        <span className="text-sm">
+        <span className="hidden md:inline-block text-sm">
             
         </span>
     </nav>

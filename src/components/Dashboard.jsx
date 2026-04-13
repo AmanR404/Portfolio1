@@ -87,14 +87,14 @@ const Dashboard = () => {
 
   return (
     <section className="h-screen w-full">
-      <div className="flex w-full justify-between absolute bottom-30 px-10 pointer-events-auto items-end">
-        <Link to="/connect" className="mb-2">
+      <div className="flex flex-col-reverse md:flex-row w-full justify-between absolute bottom-10 md:bottom-30 px-6 md:px-10 pointer-events-auto items-center md:items-end gap-10 md:gap-0">
+        <Link to="/connect" className="md:mb-2">
           <button className="bg-black border border-gray-700 text-white px-5 h-12 cursor-pointer hover:bg-white hover:text-black transition-colors uppercase tracking-widest font-semibold text-sm rounded-full">Get in touch</button>
         </Link>
-        <div className="flex flex-col gap-2 text-xl text-center font-semibold">
-          <span>Aman Rai</span>
-          <p className="text-gray-300">Full Stack (MERN) Developer building scalable web applications</p>
-          <p className="text-gray-300">
+        <div className="flex flex-col gap-2 text-base md:text-lg lg:text-xl text-center font-semibold">
+          <span className="text-2xl md:text-3xl">Aman Rai</span>
+          <p className="text-gray-300 text-sm md:text-base">Full Stack (MERN) Developer building scalable web applications</p>
+          <p className="text-gray-300 text-xs md:text-sm">
             Worked on enterprise projects for{" "}
             <b className="text-white">Reliance & Aditya Birla Group</b>
           </p>
@@ -103,7 +103,7 @@ const Dashboard = () => {
         {/* Audio Toggle Button */}
         <button 
           onClick={toggleMusic}
-          className="cursor-pointer mb-3 flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity"
+          className="cursor-pointer md:mb-3 flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity absolute top-[-90vh] md:top-auto right-6 md:right-auto md:relative"
           title={isPlaying ? "Pause Background Music" : "Play Background Music"}
         >
           <MusicEqualizer isPlaying={isPlaying} />
