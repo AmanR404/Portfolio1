@@ -88,8 +88,8 @@ const Dashboard = () => {
   return (
     <section className="h-screen w-full">
       <div className="flex flex-col-reverse md:flex-row w-full justify-between absolute bottom-10 md:bottom-30 px-6 md:px-10 pointer-events-auto items-center md:items-end gap-10 md:gap-0">
-        <Link to="/connect" className="md:mb-2">
-          <button className="bg-black border border-gray-700 text-white px-5 h-12 cursor-pointer hover:bg-white hover:text-black transition-colors uppercase tracking-widest font-semibold text-sm rounded-full">Get in touch</button>
+        <Link to="/connect" className="md:mb-2 md:w-40">
+          <button className="bg-black border border-gray-700 text-white w-full h-12 cursor-pointer hover:bg-white hover:text-black transition-colors uppercase tracking-widest font-semibold text-sm rounded-full">Get in touch</button>
         </Link>
         <div className="flex flex-col gap-2 text-base md:text-lg lg:text-xl text-center font-semibold">
           <span className="text-2xl md:text-3xl">Aman Rai</span>
@@ -103,7 +103,7 @@ const Dashboard = () => {
         {/* Audio Toggle Button */}
         <button 
           onClick={toggleMusic}
-          className="cursor-pointer md:mb-3 flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity absolute top-[-90vh] md:top-auto right-6 md:right-auto md:relative"
+          className="cursor-pointer md:mb-3 flex items-center justify-center md:w-40 md:justify-end opacity-70 hover:opacity-100 transition-opacity absolute top-[-90vh] md:top-auto right-6 md:right-auto md:relative"
           title={isPlaying ? "Pause Background Music" : "Play Background Music"}
         >
           <MusicEqualizer isPlaying={isPlaying} />
